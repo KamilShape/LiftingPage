@@ -1,0 +1,56 @@
+.hamburger {
+    position: absolute;
+    z-index: 1;
+    left: 5vw;
+    top: 5vw;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+
+    &__bar {
+        width: 100%;
+        height: 6px;
+        background-color: white;
+        transition: 0.5s ease-out;
+    }
+
+    &__bar-top {
+        transform: translateY(-100%);
+    }
+
+    &__bar-bottom {
+        transform: translateY(100%);
+    }
+}
+
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -30vw;
+    margin-top: 0;
+
+    &__list {
+        position: absolute;
+        list-style: none;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 30vw;
+        margin-top: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__list-item-link {
+        display: block;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        width: 100%;
+        padding: 5px 0;
+        margin: 0;
+    }
+
+}

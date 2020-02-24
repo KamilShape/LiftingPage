@@ -1,0 +1,73 @@
+$fontSize: 16px;
+
+$color1: rgb(67, 144, 188);
+$color2: rgb(104, 67, 202);
+$color3: rgb(141, 189, 216);
+$color4: rgb(178, 211, 230);
+
+
+body {
+    font-family: 'Oswald',
+        sans-serif;
+    margin: 0 auto;
+    padding: 0 auto;
+    font-size: $fontSize;
+}
+
+.writing {
+    position: absolute;
+    color: white;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: rgba(178, 211, 230, 0.5);
+
+    &__img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translate(0%, -50%);
+    }
+
+}
+
+.article {
+    flex-basis: calc(100% / 3);
+    margin: 5%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.title {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0, -50%);
+    text-shadow: 1px 1px 5px black;
+    color: white;
+}
+
+.button {
+    width: 20%;
+    font-family: 'Oswald',
+        sans-serif;
+    margin: 10px auto;
+    text-shadow: 1px 1px 5px black;
+    color: white;
+    background-color: yellow;
+    padding: 5px;
+    display: block;
+    z-index: 1;
+}

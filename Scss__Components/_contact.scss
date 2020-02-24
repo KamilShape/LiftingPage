@@ -1,0 +1,71 @@
+.contact {
+    position: relative;
+    background-image: url(../images/cont_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    &__title {
+        z-index: 1;
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 10px;
+        color: white;
+        text-shadow: 1px 1px 5px black;
+    }
+
+    &__button:hover {
+        cursor: pointer;
+    }
+
+    &__img {
+        position: absolute;
+    }
+}
+
+.contact-form {
+    &__title {
+        width: 100%;
+        text-align: center;
+    }
+
+    &__inputs {
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    &__input {
+        width: 90%;
+        box-shadow: 1px 1px 3px black;
+        margin: 5px;
+        border: none;
+        padding: 10px;
+    }
+
+    &__button {
+        color: black;
+        background-color: $color3;
+        background-origin: 1px solid black;
+    }
+
+    &__textarea {
+        display: block;
+        width: 90%;
+        height: 30%;
+        box-shadow: 1px 1px 3px black;
+        margin: 5px;
+        border: none;
+        padding: 10px;
+
+    }
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: $color4;
+
+}
