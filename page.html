@@ -24,19 +24,29 @@
     <nav class="menu">
       <ul class="menu__list">
         <li class="menu__list-item">
-          <a class="menu__list-item-link" href="#">Home</a>
+          <a class="menu__list-item-link" href="#"
+            ><i class="fas fa-home"></i> Home</a
+          >
         </li>
         <li class="menu__list-item">
-          <a class="menu__list-item-link" href="#">About</a>
+          <a class="menu__list-item-link" href="#"
+            ><i class="fas fa-info-circle"></i> About</a
+          >
         </li>
         <li class="menu__list-item">
-          <a class="menu__list-item-link" href="#">Blog</a>
+          <a class="menu__list-item-link" href="#">
+            <i class="fas fa-newspaper"></i> Blog</a
+          >
         </li>
         <li class="menu__list-item">
-          <a class="menu__list-item-link" href="#">Services</a>
+          <a class="menu__list-item-link" href="#">
+            <i class="fas fa-dumbbell"></i> Services</a
+          >
         </li>
         <li class="menu__list-item">
-          <a class="menu__list-item-link" href="#">Contact</a>
+          <a class="menu__list-item-link" href="#"
+            ><i class="fas fa-reply-all"></i> Contact</a
+          >
         </li>
       </ul>
     </nav>
@@ -67,7 +77,7 @@
     </header>
     <section class=" about">
       <h2 class="about__title">Welcome to our site...</h2>
-      <p>
+      <p class="about__desc">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo,
         asperiores sed nemo odio tempora magni harum tempore. Nisi illum
         aspernatur nobis saepe? Laborum expedita sit ducimus temporibus ut id,
@@ -79,12 +89,27 @@
       <h2 class="services__title">OUR SERVICES</h2>
       <div class="services__service">
         <img class="services__img" src="images/waist.png" />Fat-loss Plan
+        <p class="services__desc">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem
+          molestiae magni consectetur, perferendis sed sequi animi ad voluptatum
+          esse?
+        </p>
       </div>
       <div class="services__service">
         <img class="services__img" src="images/burger.png" />Food Plan
+        <p class="services__desc">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem
+          molestiae magni consectetur, perferendis sed sequi animi ad voluptatum
+          esse?
+        </p>
       </div>
       <div class="services__service">
         <img class="services__img" src="images/strength.png" />Strength Plan
+        <p class="services__desc">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem
+          molestiae magni consectetur, perferendis sed sequi animi ad voluptatum
+          esse?
+        </p>
       </div>
     </section>
     <section class="news articles">
@@ -93,7 +118,7 @@
         <h2 class="title">New article</h2>
       </article>
       <article class="news__new article">
-        <img class="articles__img" src="images/art_2.png" />
+        <img class="articles__img" src="images/PhotoGall10.jpg" />
         <h2 class="title">New article</h2>
       </article>
       <article class="news__new article">
@@ -121,28 +146,35 @@
         <h2 class="title">New article</h2>
       </article>
     </section>
-    <form class="contact-form">
-      <h2 class="contact-form__title">GET IN TOUCH</h2>
-      <div class="contact-form__inputs">
-        <input type="text" value="E-mail" class="E-mail contact-form__input" />
-        <input type="text" value="Name" class="Name contact-form__input" />
-        <input
-          type="text"
-          value="Subject"
-          class="Subject contact-form__input"
-        />
-        <div class="contact-form__div">
-        <label for="Message"> Message</label>
-        <textarea
-          name="Message"
-          class="contact-form__textarea"
-          value="Message"
-        ></textarea>
+    <section class="contact-form__wrapper">
+      <form class="contact-form">
+        <h2 class="contact-form__title">GET IN TOUCH</h2>
+        <div class="contact-form__inputs">
+          <input
+            type="text"
+            value="E-mail"
+            class="E-mail contact-form__input"
+          />
+          <input type="text" value="Name" class="Name contact-form__input" />
+          <input
+            type="text"
+            value="Subject"
+            class="Subject contact-form__input"
+          />
+          <h3 class="contact-form__title">MESSAGE</h3>
+          <div class="contact-form__textarea-wrapper">
+            <textarea class="contact-form__textarea"></textarea>
+          </div>
+          <button class="contact-form__button button">SEND</button>
         </div>
-        <button class="contact-form__button button">SEND</button>
-      </div>
-    </form>
-
+      </form>
+      <aside class="contact-form__info">
+        <p>If you have any questions about our services, message or call us!</p>
+        <p><i class="fas fa-envelope"></i> E-mail: kamil@mail.pl</p>
+        <p><i class="fas fa-envelope"></i> E-mail: kamil1@mail.pl</p>
+        <p><i class="fas fa-phone"></i> Phone: 666-666-666</p>
+      </aside>
+    </section>
     <footer class="footer">
       <section class="footer__social-media social-media">
         <a class="footer__link" href="#">

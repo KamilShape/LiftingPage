@@ -1,5 +1,9 @@
-const arrow2 = document.querySelector('.header__arrow:nth-of-type(2)')
-const arrow3 = document.querySelector('.header__arrow:nth-of-type(3)')
+const hambButton = document.querySelector('.hamburger')
+const menu = document.querySelector('.menu')
 
-console.log(arrow2)
-console.log(arrow3)
+const hambFunction = () => {
+    menu.classList.toggle('menu--active')
+    hambButton.classList.toggle('hamburger--active')
+}
+
+hambButton.addEventListener('click', hambFunction)

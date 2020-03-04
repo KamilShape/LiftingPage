@@ -12,6 +12,8 @@ body {
     margin: 0 auto;
     padding: 0 auto;
     font-size: $fontSize;
+    overflow-x: hidden;
+    max-width: 1600px;
 }
 
 .social-media {
@@ -35,32 +37,45 @@ body {
 }
 
 .articles {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
     position: relative;
-    background-color: rgba(178, 211, 230, 0.5);
+    display: flex;
+    background-color: $color4;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 700px;
+    margin: 0 auto;
 
-    &__img {
-        position: absolute;
-        left: 0;
-        top: 0;
-        transform: translate(0%, -50%);
+    @media(min-width: 800px) {
+        flex-direction: row;
+        height: 100%;
     }
 
+    &__img {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 
 .article {
-    flex-basis: calc(100% / 3);
-    margin: 5%;
-    text-align: center;
-    position: relative;
     overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    width: 90%;
+    height: 100%;
+    box-sizing: content-box;
+
+    @media(min-width: 640px) {
+        padding: 15px 25px;
+    }
 }
 
 .title {
     width: 100%;
+    text-align: center;
+    line-height: 50%;
+    font-size: $fontSize*2;
     margin: 0;
     padding: 0;
     position: absolute;
@@ -69,6 +84,18 @@ body {
     transform: translate(0, -50%);
     text-shadow: 1px 1px 5px black;
     color: white;
+
+    @media(min-width: 800px) {
+        font-size: $fontSize*1.5;
+    }
+
+    @media(min-width: 1024px) {
+        font-size: $fontSize*1.9;
+    }
+
+    @media(min-width: 1330px) {
+        font-size: $fontSize*2.4;
+    }
 }
 
 .button {
