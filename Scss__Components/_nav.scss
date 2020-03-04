@@ -10,7 +10,7 @@
     border: none;
     transition: 1s ease-out;
 
-    @media(min-width: 800px) {
+    @media (min-width: 800px) {
         display: none;
     }
 
@@ -25,13 +25,26 @@
         transform: translateY(-100%);
     }
 
+    &__bar-top--active {
+        transform: translateY(calc(50% + 3px)) rotate(45deg);
+        ;
+    }
+
+    &__bar-middle--active {
+        opacity: 0;
+    }
+
     &__bar-bottom {
         transform: translateY(100%);
     }
+
+    &__bar-bottom--active {
+        transform: translateY(calc(-50% - 3px)) rotate(-45deg);
+    }
 }
 
-
 .menu {
+    // overflow: hidden;
     position: fixed;
     top: 0;
     left: -150px;
@@ -39,10 +52,9 @@
     transition: 1s ease-out;
     z-index: 2;
 
-    @media(min-width: 800px) {
+    @media (min-width: 800px) {
         left: 0;
     }
-
 
     &__list {
         position: absolute;
@@ -55,7 +67,7 @@
         display: flex;
         flex-direction: column;
 
-        @media(min-width: 800px) {
+        @media (min-width: 800px) {
             flex-direction: row;
             height: 7vh;
             width: 100vw;
@@ -67,10 +79,9 @@
     &__list-item {
         text-align: center;
 
-        @media(min-width: 800px) {
+        @media (min-width: 800px) {
             width: 20%;
         }
-
     }
 
     &__list-item-link {
@@ -78,16 +89,68 @@
         text-decoration: none;
         color: white;
         text-align: center;
+        box-sizing: border-box;
         width: 100%;
         padding: 5px 0;
         margin: 0;
+        transition: 0.3s ease-in-out;
 
-        @media(min-width: 800px) {
+        &:hover {
+            color: rgba(0, 0, 0, 0.9);
+            background-color: white;
+            cursor: pointer;
+        }
+
+        @media (min-width: 800px) {
             width: 100%;
             font-size: $fontSize * 1.2;
+            height: 7vh;
+
         }
+
     }
 
+    &__inside-list {
+        // display: block;
+        color: white;
+        list-style: none;
+        padding: 0;
+
+    }
+
+    &__inside-list--blog,
+    &__inside-list--services {
+        display: none;
+    }
+
+    &__inside-item {
+        // background-color: rgba(0, 0, 0, 0.6);
+        width: 100%;
+    }
+
+    &__inside-item-link {
+
+        display: block;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 5px 0;
+        width: 100%;
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+            color: rgba(0, 0, 0, 0.9);
+            background-color: white;
+            cursor: pointer;
+        }
+
+        @media (min-width: 800px) {
+            width: 100%;
+            font-size: $fontSize * 1.2;
+            // height: 7vh;
+
+        }
+
+    }
 }
 
 .menu--active {
