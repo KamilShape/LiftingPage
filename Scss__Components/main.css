@@ -5,6 +5,8 @@ body {
   font-size: 16px;
   overflow-x: hidden;
   max-width: 1600px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 .social-media {
@@ -62,6 +64,9 @@ body {
 }
 
 .article {
+  opacity: 0;
+  -webkit-transition: 1.2s linear;
+  transition: 1.2s linear;
   overflow: hidden;
   position: relative;
   margin: 10px auto;
@@ -75,6 +80,10 @@ body {
   .article {
     padding: 15px 25px;
   }
+}
+
+.article--active {
+  opacity: 1;
 }
 
 .title {
@@ -270,10 +279,6 @@ body {
   display: none;
 }
 
-.menu__inside-item {
-  width: 100%;
-}
-
 .menu__inside-item-link {
   display: block;
   background-color: rgba(0, 0, 0, 0.6);
@@ -296,6 +301,10 @@ body {
   }
 }
 
+.menu__list-item-link--active {
+  display: block;
+}
+
 .menu--active {
   left: 0;
 }
@@ -305,6 +314,48 @@ body {
   position: fixed;
 }
 
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .header {
   width: 100%;
   height: 100vh;
@@ -312,6 +363,8 @@ body {
   background-size: cover;
   margin-top: 0;
   position: relative;
+  -webkit-animation: appear 2s linear;
+          animation: appear 2s linear;
 }
 
 .header__social-media {
@@ -323,6 +376,8 @@ body {
 .header__title {
   top: 30%;
   font-size: 35.2px;
+  -webkit-animation: appear 3s linear;
+          animation: appear 3s linear;
 }
 
 @media (min-width: 800px) {
@@ -346,6 +401,8 @@ body {
 .header__desc {
   top: 50%;
   font-size: 25.6px;
+  -webkit-animation: appear 3s linear;
+          animation: appear 3s linear;
 }
 
 @media (min-width: 800px) {
@@ -371,6 +428,8 @@ body {
   font-size: 22.4px;
   margin: 0;
   padding: 0;
+  -webkit-animation: appear 3s linear;
+          animation: appear 3s linear;
 }
 
 @media (min-width: 800px) {
@@ -384,6 +443,8 @@ body {
   padding: 0;
   bottom: 5%;
   font-size: 20px;
+  -webkit-animation: appear 3s linear;
+          animation: appear 3s linear;
 }
 
 @media (min-width: 800px) {
