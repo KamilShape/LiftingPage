@@ -1,0 +1,60 @@
+.BMI {
+    &__wrapper {
+        padding-top: 50px;
+        width: 100%;
+        height: calc(100vh - 50px);
+        display: flex;
+        flex-direction: column;
+
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__title {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__label {
+        padding: 8px;
+        font-size: $fontSize*1.1;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    &__input {
+        display: block;
+        margin: 0 auto;
+        padding: 8px;
+        width: 50%;
+        font-size: $fontSize;
+        text-align: center;
+        font-family: 'Oswald',
+            sans-serif;
+
+        @media (min-width: 1024px) {
+            width: 30%
+        }
+    }
+
+    &__button {
+        transform: translateX(-50%);
+        width: 120px;
+        margin-left: 50%;
+    }
+
+    &__result {
+        // border: 3px solid $color4;
+        font-size: $fontSize*1.5;
+        margin: 0 auto;
+        padding: 5px;
+        text-align: center;
+    }
+}

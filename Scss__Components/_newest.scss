@@ -1,0 +1,136 @@
+.newest {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 10px auto 20px auto;
+
+    @media (min-width:800px) {
+        flex-direction: row;
+        width: 95%;
+    }
+
+    @media (min-width:1024px) {
+        width: 90%;
+    }
+
+    @media (min-width:1200px) {
+        width: 85%;
+    }
+
+    @media (min-width:1330px) {
+        width: 80%;
+    }
+
+    @media (min-width:1550px) {
+        width: 75%;
+    }
+
+    &__desc {
+        position: absolute;
+        bottom: 0;
+        box-sizing: border-box;
+        padding: 10px;
+        // height: 50px;
+        width: 100%;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        text-align: center;
+
+        p {
+            @media (min-width:800px) {
+                text-align: left;
+                font-size: $fontSize*0.8;
+            }
+
+            @media (min-width:1024px) {
+                font-size: $fontSize*0.9;
+            }
+
+            @media (min-width:1330px) {
+                font-size: $fontSize;
+            }
+
+            @media (min-width:1550px) {
+                font-size: $fontSize*1.1;
+            }
+        }
+
+    }
+
+    &__title {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    &__first-row {
+        width: 90%;
+        margin: 0 auto;
+
+        @media (min-width:800px) {
+            width: 32%;
+            margin: 0;
+        }
+    }
+
+    &__second-row {
+        margin: 0 auto;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+
+        @media (min-width:800px) {
+            width: 66%;
+            margin: 0;
+        }
+
+    }
+
+    &__article--first {
+        width: 100%;
+        margin: 0 auto;
+        height: 200px;
+        background-image: url('../images/PhotoGall12.jpg');
+
+        @media (min-width:800px) {
+            margin: 0;
+        }
+
+    }
+
+    &__article--second {
+        width: 49.5%;
+        height: 200px;
+        background-image: url('../images/PhotoGall6.jpg');
+    }
+
+    &__article--third {
+        width: 49.5%;
+        height: 200px;
+        background-image: url('../images/PhotoGall9.jpg');
+    }
+
+    &__article {
+        background-position: center;
+        background-size: cover;
+        position: relative;
+
+        @media (min-width:800px) {}
+
+        @media (min-width:1024px) {}
+
+        @media (min-width:1200px) {
+            height: 250px;
+        }
+
+        @media (min-width:1330px) {
+            height: 280px;
+        }
+
+        @media (min-width:1550px) {}
+    }
+
+
+}

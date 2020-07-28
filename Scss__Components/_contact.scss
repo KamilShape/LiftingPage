@@ -1,123 +1,122 @@
-.contact {
-    position: relative;
-    background-image: url(../images/cont_bg.jpg);
-    background-position: center;
-    background-size: cover;
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
     box-sizing: border-box;
-    overflow: hidden;
+    padding: 10px;
+    width: 85%;
+    height: 70%;
 
-    &__title {
-        z-index: 1;
-        width: 100%;
-        text-align: center;
-        box-sizing: border-box;
-        padding: 10px;
-        color: white;
-        text-shadow: 1px 1px 5px black;
-    }
-
-    &__button:hover {
-        cursor: pointer;
-    }
-
-    &__img {
-        position: absolute;
-    }
-}
-
-.contact-form {
     &__wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        margin: 0 auto;
-        ;
-
-        @media(min-width: 800px) {
-            flex-direction: row;
-        }
-
-        @media(min-width: 1024px) {
-            flex-direction: row;
-            width: 70%;
-        }
+        height: 100vh;
     }
 
-    &__title {
+    @media (min-width:640px) {
+        width: 75%;
+    }
+
+    @media (min-width:800px) {
+        width: 70%;
+    }
+
+    @media (min-width:1024px) {
+        width: 55%;
+    }
+
+    @media (min-width:1200px) {
+        width: 50%;
+    }
+
+    @media (min-width:1330px) {
+        width: 40%;
+    }
+
+    @media (min-width:1550px) {
+        width: 30%;
+    }
+
+
+    &__main_title {
+        padding-top: 15px;
+        text-align: center;
+    }
+
+    &__label {
+        margin: 0 auto;
+        font-size: $fontSize;
         width: 100%;
-        text-align: center;
-
-    }
-
-    &__inputs {
-        width: 90%;
-        text-align: center;
-        margin: 0 auto;
-
-        @media(min-width: 800px) {
-            flex-basis: 50%;
-        }
+        text-align: left;
     }
 
     &__input {
-        width: 90%;
-        box-shadow: 1px 1px 3px black;
-        margin: 5px;
-        border: none;
-        padding: 10px;
+        display: block;
+        font-size: $fontSize;
+        padding: 5px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    &__message {
+        margin: 0 auto;
+        display: block;
+        padding: 5px;
+        width: 100%;
     }
 
     &__button {
-        color: black;
-        background-color: $color3;
-        background-origin: 1px solid black;
-    }
-
-    &__textarea {
-        // display: block;
-        // text-align: center;
-        width: 100%;
-        height: 100%;
-        box-shadow: 1px 1px 3px black;
-        border: none;
+        margin: 15px auto;
+        width: 20%;
+        font-size: $fontSize*1.0;
         padding: 5px;
-        resize: none;
-    }
+        background-color: $color3;
+        outline: none;
+        border-radius: 5px;
+        font-family: 'Oswald',
+            sans-serif;
+        transition: 0.1s ease-in-out;
 
-    &__textarea-wrapper {
-        width: 90%;
-        text-align: center;
-        margin: 0 auto;
-
-    }
-
-    &__info {
-        width: 100%;
-        font-size: $fontSize*0.9;
-        text-align: center;
-        display: flex;
-        height: 100%;
-        margin: auto 0;
-        flex-direction: column;
-        justify-content: space-between;
-
-        @media(min-width: 800px) {
-            flex-basis: 50%;
+        &:hover {
+            cursor: pointer;
+            background-color: $color2;
+            color: white;
+            border: 3px solid $color4;
         }
     }
-}
 
-.footer {
-    text-align: center;
-    padding: 20px;
-    background-color: $color4;
+    &-social_media {
+        border: none;
+        // position: absolute;
+        padding-top: 80px;
+        width: 100%;
 
-    &__social-media {
-        color: black;
-        margin: 5px;
+        @media (min-width:640px) {
+            width: 75%;
+        }
+
+        @media (min-width:800px) {
+            width: 70%;
+        }
+
+        @media (min-width:1024px) {
+            width: 55%;
+        }
+
+        @media (min-width:1200px) {
+            width: 50%;
+        }
+
+        @media (min-width:1330px) {
+            width: 40%;
+        }
+
+        @media (min-width:1550px) {
+            width: 30%;
+        }
     }
 
-    &__link {
-        color: black;
+    &__footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
     }
 }

@@ -1,0 +1,52 @@
+.social_media {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-top: 3px solid $color1;
+    border-bottom: 3px solid $color1;
+    box-sizing: content-box;
+    padding: 0px 10px;
+
+    @media (min-width:800px) {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    @media (min-width:1024px) {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    @media (min-width:1200px) {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    @media (min-width:1330px) {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    @media (min-width:1550px) {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+
+    &__icon {
+        font-size: $fontSize * 2.5;
+    }
+
+    &__icon--facebook {
+        color: rgb(66, 103, 178)
+    }
+
+    &__icon--instagram {
+        color: rgb(221, 42, 123)
+    }
+
+    &__icon--mail {
+        color: rgb(212, 69, 56)
+    }
+}

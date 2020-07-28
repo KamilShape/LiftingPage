@@ -1,0 +1,86 @@
+.calculators {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+
+
+    @media (min-width:640px) {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+
+    @media (min-width:1024px) {
+        width: 90%;
+    }
+
+    @media (min-width:1200px) {
+        width: 85%;
+    }
+
+    @media (min-width:1330px) {
+        width: 80%;
+    }
+
+    @media (min-width:1550px) {
+        width: 75%;
+    }
+
+    &__wrapper {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    &__image {
+
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+    }
+
+    &__title {
+        font-size: $fontSize*1.3;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-shadow: 2px 2px 3px black;
+        text-transform: uppercase;
+
+        @media (min-width:800px) {
+            font-size: $fontSize*1.5;
+        }
+
+        @media (min-width:1024px) {
+            font-size: $fontSize*1.6;
+        }
+
+        @media (min-width:1200px) {
+            font-size: $fontSize*1.7;
+        }
+
+        @media (min-width:1330px) {
+            font-size: $fontSize*1.8;
+        }
+
+        @media (min-width:1550px) {
+            font-size: $fontSize*2;
+        }
+
+    }
+
+    img {
+        width: 100%;
+    }
+}

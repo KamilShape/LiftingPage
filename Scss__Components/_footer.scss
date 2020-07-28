@@ -1,0 +1,24 @@
+.footer {
+    background-color: $color5;
+    font-size: $fontSize;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    height: 40px;
+
+    @media (min-width:800px) {
+        font-size: $fontSize*1.1;
+    }
+
+    @media (min-width:1024px) {
+        font-size: $fontSize*1.2;
+    }
+
+    @media (min-width:1200px) {
+        font-size: $fontSize*1.3;
+    }
+
+    @media (min-width:1330px) {
+        font-size: $fontSize*1.4;
+    }
+}

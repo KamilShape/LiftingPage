@@ -1,0 +1,55 @@
+.calorie {
+    &__wrapper {
+        padding-top: 70px;
+        width: 100%;
+        height: calc(100vh - 70px);
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    &__input,
+    &__label,
+    &__select {
+        display: block;
+        width: 200px;
+        margin: 0 auto;
+        padding: 8px;
+        outline: none;
+        font-family: 'Oswald',
+            sans-serif;
+
+        @media (min-width: 1024px) {
+            width: 400px;
+        }
+    }
+
+    &__input {
+        display: block;
+        margin: 0 auto;
+        font-size: $fontSize;
+        text-align: center;
+
+
+    }
+
+    &__label {
+        font-size: $fontSize*1.1;
+        text-align: center;
+    }
+
+
+    &__button {
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__li {
+        text-align: center;
+    }
+}
