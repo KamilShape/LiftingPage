@@ -5,10 +5,10 @@
     box-sizing: border-box;
     padding: 10px;
     width: 85%;
-    height: 70%;
+
 
     &__wrapper {
-        height: 100vh;
+        min-height: calc(100vh - 80px);
     }
 
     @media (min-width:640px) {
@@ -85,8 +85,8 @@
 
     &-social_media {
         border: none;
-        // position: absolute;
-        padding-top: 80px;
+
+        padding-top: 70px;
         width: 100%;
 
         @media (min-width:640px) {

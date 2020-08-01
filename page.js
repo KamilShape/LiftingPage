@@ -19,7 +19,11 @@ hamburgerSquare.addEventListener('click', () => {
 window.addEventListener("resize", () => {
     if (window.innerWidth > 800) {
         menuList.classList.add('menu__list--visible')
+
     } else {
         menuList.classList.remove('menu__list--visible')
+        topBar.classList.remove('menu__bar-rotate-plus')
+        middleBar.classList.remove('menu__bar-disappear')
+        bottomBar.classList.remove('menu__bar-rotate-minus')
     }
 });

@@ -1,13 +1,13 @@
 .BMI {
     &__wrapper {
-        padding-top: 50px;
-        width: 100%;
-        height: calc(100vh - 50px);
-        display: flex;
-        flex-direction: column;
-
-        position: relative;
-        overflow: hidden;
+        min-height: calc(100vh - 80px);
+        // padding-top: 50px;
+        // width: 100%;
+        // height: calc(100vh - 80px);
+        // display: flex;
+        // flex-direction: column;
+        // position: relative;
+        // overflow: hidden;
     }
 
     &__title {

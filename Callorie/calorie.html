@@ -36,13 +36,25 @@
                 <a href="../contact.html" class="menu__list_item_link">Kontakt</a>
             </li>
         </ul>
+
         <div class="menu__hamburger">
             <div class="menu__bar menu__bar--top"></div>
             <div class="menu__bar menu__bar--middle"></div>
             <div class="menu__bar menu__bar--bottom"></div>
         </div>
     </nav>
-    <div class="calorie__wrapper">
+    <div class="contact_form__wrapper">
+        <section class="social_media contact_form-social_media">
+            <div class="social_media__icon social_media__icon--facebook">
+                <i class="fab fa-facebook"></i>
+            </div>
+            <div class="social_media__icon social_media__icon--instagram">
+                <i class="fab fa-instagram"></i>
+            </div>
+            <div class="social_media__icon social_media__icon--mail">
+                <i class="fas fa-envelope"></i>
+            </div>
+        </section>
         <h1 class="calorie__title">Calculate your calorie</h1>
         <form action="" class="calorie__calculator">
             <label class='calorie__label'><i class="fas fa-venus-mars"> </i> Sex</label>
@@ -69,7 +81,7 @@
                 <option value="mass">Mass</option>
                 <option value="cut">Cut</option>
             </select>
-            <button class='calorie__button button'>Calculate your BMI</button>
+            <button class='calorie__button button'>Calculate</button>
         </form>
         <div class="calorie__result">
             <p class='calorie__li calorie__li1'></p>
@@ -77,10 +89,49 @@
             <p class='calorie__li calorie__li3'></p>
         </div>
     </div>
-    <footer class="footer contact_form__footer">
+
+    </section>
+    <footer class="footer">
         © Copyright Kamil Linstedt 2020.
     </footer>
-</body>
-<script src="calorie.js"></script>
+    <script src="calorie.js"></script>
 
 </html>
+
+
+
+<!-- <div class="calorie__wrapper">
+     <h1 class="calorie__title">Calculate your calorie</h1>
+     <form action="" class="calorie__calculator">
+         <label class='calorie__label'><i class="fas fa-venus-mars"> </i> Sex</label>
+         <select class='calorie__select' name="" id="sex">
+             <option value="M">Men</option>
+             <option value="W">Woman</option>
+         </select>
+         <label class='calorie__label'><i class="fas fa-baby"></i> Age</label>
+         <input class='calorie__input calorie__age' type="number">
+         <label class='calorie__label'><i class="fas fa-weight"></i> Weight[kg]</label>
+         <input class='calorie__input calorie__weight' type="number">
+         <label class='calorie__label'> <i class="fas fa-ruler-vertical"></i> Height[cm]</label>
+         <input class='calorie__input calorie__height' type="number">
+         <label class='calorie__label' for="cpm"><i class="fas fa-running"></i> Your activity level</label>
+         <select class='calorie__select' name="" id="cpm">
+             <option value="0">No activity (sedentary work, no training)</option>
+             <option value="1">Low activity (sedentary work, 1-2 trainings/week)</option>
+             <option value="2">Medium activity (sedentary work, 3-4 trainings/week)</option>
+             <option value="3">High activity (physical work, 3-4 trainings/week)</option>
+             <option value="4">High activity (professional athletes, 6-7 trainings/week)</option>
+         </select>
+         <label class='calorie__label' for="goal"> <i class="fas fa-bullseye"></i> Goal</label>
+         <select class='calorie__select' name="" id="goal">
+             <option value="mass">Mass</option>
+             <option value="cut">Cut</option>
+         </select>
+         <button class='calorie__button button'>Calculate your BMI</button>
+     </form>
+     <div class="calorie__result">
+         <p class='calorie__li calorie__li1'></p>
+         <p class='calorie__li calorie__li2'></p>
+         <p class='calorie__li calorie__li3'></p>
+     </div>
+ </div> -->

@@ -11,6 +11,11 @@ $color5: rgb(39, 38, 55);
     box-sizing: border-box;
 }
 
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
     font-size: $fontSize*0.8;
     font-family: 'Oswald',
@@ -85,4 +90,8 @@ body {
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+
+.wrapper {
+    min-height: calc(100vh - 80px);
 }

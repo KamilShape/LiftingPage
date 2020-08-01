@@ -1,12 +1,13 @@
 .calorie {
     &__wrapper {
-        padding-top: 70px;
-        width: 100%;
-        height: calc(100vh - 70px);
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-        margin: 0 auto;
+        height: calc(100vh - 80px);
+        // padding-top: 70px;
+        // width: 100%;
+        // height: calc(100vh - 70px);
+        // display: flex;
+        // flex-direction: column;
+        // width: 50%;
+        // margin: 0 auto;
     }
 
     &__title {

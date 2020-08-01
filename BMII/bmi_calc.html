@@ -31,44 +31,49 @@
                 <a href="../contact.html" class="menu__list_item_link">Kontakt</a>
             </li>
         </ul>
+
         <div class="menu__hamburger">
             <div class="menu__bar menu__bar--top"></div>
             <div class="menu__bar menu__bar--middle"></div>
             <div class="menu__bar menu__bar--bottom"></div>
         </div>
     </nav>
-    <div class="BMI__wrapper">
-        <section class="social_media contact_form-social_media">
-            <div class="social_media__icon social_media__icon--facebook">
-                <i class="fab fa-facebook"></i>
-            </div>
-            <div class="social_media__icon social_media__icon--instagram">
-                <i class="fab fa-instagram"></i>
-            </div>
-            <div class="social_media__icon social_media__icon--mail">
-                <i class="fas fa-envelope"></i>
-            </div>
-        </section>
-        <h1 class='BMI__title'>Oblicz swoje BMI:</h1>
-        <form action="" class="BMI__calc">
-            <label for="BMI__weight" class="BMI__label"><i class="fas fa-weight"></i> Waga[kg]</label>
-            <input type="number" class='BMI__input BMI__weight_input'>
-            <label for="BMI__height" class="BMI__label"><i class="fas fa-ruler-vertical"></i> Wzrost[cm]</label>
-            <input type="number" class=' BMI__input BMI__height_input'>
-            <button class='BMI__button button'>Oblicz BMI</button>
-        </form>
+    <div class="contact_form__wrapper">
+        <div class="BMI__wrapper">
+            <section class="social_media contact_form-social_media">
+                <div class="social_media__icon social_media__icon--facebook">
+                    <i class="fab fa-facebook"></i>
+                </div>
+                <div class="social_media__icon social_media__icon--instagram">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <div class="social_media__icon social_media__icon--mail">
+                    <i class="fas fa-envelope"></i>
+                </div>
+            </section>
+            <h1 class='BMI__title'>Oblicz swoje BMI:</h1>
+            <form action="" class="BMI__calc">
+                <label for="BMI__weight" class="BMI__label"><i class="fas fa-weight"></i> Waga[kg]</label>
+                <input type="number" class='BMI__input BMI__weight_input'>
+                <label for="BMI__height" class="BMI__label"><i class="fas fa-ruler-vertical"></i> Wzrost[cm]</label>
+                <input type="number" class=' BMI__input BMI__height_input'>
+                <button class='BMI__button button'>Oblicz BMI</button>
+            </form>
 
-        <h2 class="BMI__title ">Twoje BMI:</h2>
-        <section class='BMI__result'>
-            <div class="BMI__number"></div>
-            <div class='BMI__info'></div>
+            <h2 class="BMI__title ">Twoje BMI:</h2>
+            <section class='BMI__result'>
+                <div class="BMI__number"></div>
+                <div class='BMI__info'></div>
+            </section>
+        </div>
+
         </section>
-        <footer class="footer contact_form__footer">
+        <footer class="footer">
             © Copyright Kamil Linstedt 2020.
         </footer>
-    </div>
+
 </body>
-<script src="bmi_calc.html"></script>
+<script src="bmi_calc.js"></script>
 <script src="../page.js"></script>
 
 </html>
