@@ -51,25 +51,27 @@
         </section>
         <h1 class='contact_form__main_title'>Masz pyatnie? Pisz śmiało ;)</h1>
         <section class='contact_form'>
+            <form method="post" action='mail.php'>
             <label class="contact_form__label" for="">
                 Imię/Nazwa:
-                <input class="contact_form__input" type="text">
+                <input class="contact_form__input" type="text " name='name'>
             </label>
             <label class="contact_form__label" for="">
-                Mail:
-                <input class="contact_form__input" type="text">
+                E-mail:
+                <input class="contact_form__input" type="text" name='mail'>
             </label>
             <label class="contact_form__label" for="">
                 Temat:
-                <input class="contact_form__input" type="text">
+                <input class="contact_form__input" type="text" name='subject'>
             </label>
             <label class="contact_form__label">
-                Message:
-                <textarea class="contact_form__message" name="" id="" cols="30" rows="10"></textarea>
+                Wiadomość:
+                <textarea class="contact_form__message" cols="30" rows="10" name='message'></textarea>
             </label>
-            <button class='contact_form__button'>
+            <button class='contact_form__button' name='send'>
                 Wyślij
             </button>
+            </form>
     </div>
 
     </section>
@@ -81,3 +83,5 @@
 <script src="page.js"></script>
 
 </html>
+
+
