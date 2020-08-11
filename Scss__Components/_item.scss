@@ -1,0 +1,63 @@
+.item {
+    padding: 20px;
+    padding-top: 70px;
+    margin: 0 auto;
+    width: 80%;
+
+    @media (min-width: 640px) {
+        width: 85%;
+    }
+
+    @media (min-width: 800px) {
+        width: 82%;
+    }
+
+    @media (min-width: 1024px) {
+        width: 75%;
+    }
+
+    @media (min-width: 1200px) {
+        width: 65%;
+    }
+
+    @media (min-width: 1330px) {
+        width: 68%;
+    }
+
+    @media (min-width: 1400px) {
+        width: 65%;
+    }
+
+    @media (min-width: 1550px) {
+        width: 58%;
+    }
+
+    &__belt {
+        position: fixed;
+        top: 55px;
+        width: 0;
+        height: 20px;
+        background-color: blue
+    }
+
+    &__title {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: $fontSize*1.5;
+    }
+
+    &__part_title {
+        text-transform: uppercase;
+    }
+
+    &__image_box {
+        margin: 0 auto;
+    }
+
+    &__image {
+        width: 100%;
+        max-width: 600px;
+        display: block;
+        margin: 0 auto;
+    }
+}

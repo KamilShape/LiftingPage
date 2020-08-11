@@ -27,3 +27,10 @@ window.addEventListener("resize", () => {
         bottomBar.classList.remove('menu__bar-rotate-minus')
     }
 });
+const belt = document.querySelector('.item__belt')
+const body = document.querySelector('body')
+window.addEventListener('scroll', function (e) {
+    const bodyHeight = document.querySelector('body').clientHeight
+    let beltSize = window.scrollY / (bodyHeight - window.innerHeight) * 100
+    belt.style.width = `${beltSize}%`
+})
